@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  NeoSolarized = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/NeoSolarized",
+    url = "https://github.com/overcache/NeoSolarized"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -89,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cpa-cache"] = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/cpa-cache",
+    url = "/Users/steven/Documents/GitHub/cpa-cache"
+  },
   ["cphelper.nvim"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/cphelper.nvim",
@@ -98,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["jupyter-vim"] = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/jupyter-vim",
+    url = "https://github.com/jupyter-vim/jupyter-vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -139,11 +154,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["oxocarbon.nvim"] = {
-    loaded = true,
-    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
-    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

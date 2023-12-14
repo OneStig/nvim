@@ -48,7 +48,16 @@ return require('packer').startup(function(use)
 
   use {"lukas-reineke/indent-blankline.nvim"}
   use {"RRethy/vim-illuminate"}
-  use {'nyoom-engineering/oxocarbon.nvim'}
+  
+  --use {'nyoom-engineering/oxocarbon.nvim'}
+  --use {'ellisonleao/gruvbox.nvim'}
+  --use {'tiagovla/tokyodark.nvim'}
+  --use {'folke/tokyonight.nvim'}
+  use {'overcache/NeoSolarized'}
 
   use {"preservim/nerdcommenter"}
+  use {"jupyter-vim/jupyter-vim"}
+
+  use {"~/Documents/GitHub/cpa-cache"}
+  --use {'OneStig/cpa-cache'}
 end)
