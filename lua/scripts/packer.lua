@@ -28,11 +28,22 @@ return require('packer').startup(function(use)
   }
 
   use {
-	  'nvim-tree/nvim-tree.lua',
-	  requires = {
-		  'nvim-tree/nvim-web-devicons', -- optional
-	  },
+	  "nvim-neo-tree/neo-tree.nvim",
+	  branch = "v3.x",
+	  requires = { 
+		  "nvim-lua/plenary.nvim",
+		  "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+		  "MunifTanjim/nui.nvim",
+		  -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+	  }
   }
+
+  --use {
+	  --'nvim-tree/nvim-tree.lua',
+	  --requires = {
+		  --'nvim-tree/nvim-web-devicons', -- optional
+	  --},
+  --}
 
   use {'neovim/nvim-lspconfig'}
   use 'hrsh7th/nvim-cmp'
@@ -50,24 +61,10 @@ return require('packer').startup(function(use)
   use {"RRethy/vim-illuminate"}
   
   -- colorscheme stuff
-  use {'nyoom-engineering/oxocarbon.nvim'}
-  use {'overcache/NeoSolarized'}
-  use {
-	  'scottmckendry/cyberdream.nvim',
-	  lazy = false,
-	  priority = 1000,
-	  config = function()
-		  require("cyberdream").setup({
-			  transparent = true, -- enable transparent background
-			  italic_comments = true, -- italicize comments
-			  hide_fillchars = true, -- replace all fillchars with ' ' for the ultimate clean look
-		  })
-	  end,
-  }
+  use {'matsuuu/pinkmare'}
+
 
   use {"preservim/nerdcommenter"}
-  use {"jupyter-vim/jupyter-vim"}
-
   use {"~/Documents/GitHub/cpa-cache"}
   --use {'OneStig/cpa-cache'}
 end)
