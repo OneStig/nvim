@@ -38,13 +38,6 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  --use {
-	  --'nvim-tree/nvim-tree.lua',
-	  --requires = {
-		  --'nvim-tree/nvim-web-devicons', -- optional
-	  --},
-  --}
-
   use {'neovim/nvim-lspconfig'}
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -57,7 +50,10 @@ return require('packer').startup(function(use)
 	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use {"lukas-reineke/indent-blankline.nvim"}
+  use {
+	  "lukas-reineke/indent-blankline.nvim",
+	  config = function() require("ibl").setup {} end
+  }
   use {"RRethy/vim-illuminate"}
   
   -- colorscheme stuff

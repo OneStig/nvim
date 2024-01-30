@@ -1,6 +1,11 @@
-require'bufferline'.setup {
+require('bufferline').setup {
   options = {
-    offsets = {{filetype = "NvimTree", text = "File Explorer", text_align = "center"}},
-  },
+    offsets = {{
+      filetype = "neo-tree",
+      text = "neo-tree",
+      highlight = "Directory",
+      text_align = "left"
+    }}
+  }
 }
 

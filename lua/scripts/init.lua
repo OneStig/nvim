@@ -1,5 +1,8 @@
 require("scripts.remap")
 
+local home = os.getenv("HOME")
+vim.g["cpa#dir"] = home .. "/Documents/GitHub/cpa-cache/cache"
+
 vim.opt.termguicolors = true
 
 vim.opt.number = true
