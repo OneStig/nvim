@@ -34,7 +34,6 @@ return require('packer').startup(function(use)
 		  "nvim-lua/plenary.nvim",
 		  "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		  "MunifTanjim/nui.nvim",
-		  -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	  }
   }
 
@@ -57,10 +56,18 @@ return require('packer').startup(function(use)
   use {"RRethy/vim-illuminate"}
   
   -- colorscheme stuff
-  use {'matsuuu/pinkmare'}
+  use {'marko-cerovac/material.nvim'}
 
+  --use {
+	  --'maxmx03/solarized.nvim',
+	  --config = function()
+		  --vim.o.background = 'light'
+	  --end
+  --}
 
   use {"preservim/nerdcommenter"}
   use {"~/Documents/GitHub/cpa-cache"}
-  --use {'OneStig/cpa-cache'}
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+	  require("toggleterm").setup()
+  end}
 end)
