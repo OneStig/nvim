@@ -1,9 +1,5 @@
 vim.g.mapleader = " "
 
-local home = os.getenv("HOME")
-vim.g["cpa#dir"] = home .. "/Documents/GitHub/contests"
-vim.g["cph#cpp#compile_command"] = "clang++ -std=c++20 solution.cpp -o cpp.out"
-
 vim.opt.termguicolors = true
 
 vim.opt.number = true
