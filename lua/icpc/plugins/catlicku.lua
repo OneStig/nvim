@@ -1,0 +1,5 @@
+return {
+    {
+        'nanoblob-jpeg/catlicku',
+    }
+}
