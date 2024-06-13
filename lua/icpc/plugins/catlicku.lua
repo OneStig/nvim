@@ -1,5 +1,5 @@
 return {
     {
-        'nanoblob-jpeg/catlicku',
+        'OneStig/catlicku',
     }
 }

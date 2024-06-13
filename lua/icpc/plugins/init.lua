@@ -1,3 +1,3 @@
 return {
-    {'yonlu/omni.vim'}
+    {'marko-cerovac/material.nvim'}
 }

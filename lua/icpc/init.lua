@@ -4,4 +4,5 @@ require("icpc.lazy")
 require("icpc.remap")
 
 vim.cmd("let base16colorspace=256")
-vim.cmd("colorscheme omni")
+vim.cmd("colorscheme material")
+
