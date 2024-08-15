@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<cr>")
+vim.keymap.set("n", "<leader>e", "<Cmd>Oil<cr>")
 
 vim.keymap.set("n", "<leader>d", "<Cmd>bdelete<cr>")
 vim.keymap.set("n", "<leader>l", "<Cmd>bnext<cr>")

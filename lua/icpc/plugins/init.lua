@@ -1,3 +1,4 @@
 return {
-    {'marko-cerovac/material.nvim'}
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }
 }

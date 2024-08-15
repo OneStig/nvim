@@ -13,5 +13,3 @@ vim.o.hlsearch = false
 vim.o.incsearch = false
 
 vim.cmd [[highlight clear MatchParen]]
-
-vim.g.material_style = "deep ocean"
